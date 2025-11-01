@@ -4,11 +4,16 @@ import './index.css'
 import App from './App.jsx'
 import store from './redux/store.js'
 import Counter from './components/Counter.jsx'
+import Users from './components/Users.jsx'
+
 import { Provider } from 'react-redux'
+import ReadFile from './components/ReadFile.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
    <Provider store={store}>
+    <Users/>
+    <ReadFile/>
      <Counter/>
     </Provider>
   </StrictMode>,
