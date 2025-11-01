@@ -16,12 +16,6 @@ export default function ReadFile() {
     <div>
       <input type="file" onChange={handleFile} />
       <p>{text}</p>
-      <iframe
-        src={text}
-        width="100%"
-        height="600px"
-        title="PDF Preview"
-      ></iframe>
     </div>
   );
 }
